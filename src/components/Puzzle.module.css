@@ -1,0 +1,47 @@
+.puzzle{
+    width: 90%;
+    padding: 2rem;
+    border: 3px dotted rgb(228, 77, 27);
+    box-shadow: 2px 5px 25px rgb(168, 151, 168);
+    margin: 1rem auto;
+    position: relative;
+    .question{
+        font-size: 1.7rem;
+    }
+    .icon{
+        cursor: pointer;
+        font-size: 2rem;
+        position: absolute;
+        top: 30%;
+        left: 1rem;
+        color: rgb(18, 159, 53);
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.nohidden{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width:560px) {
+    .puzzle{
+        width: 100%;
+        .question{
+            font-size: 14px;
+        }
+    }
+    .icon{
+        font-size: 1rem !important;
+        top: 45%  !important;
+    }
+    .nohidden{
+        font-size: 1rem;
+    }
+}
